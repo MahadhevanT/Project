@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Table</title>
+    <link rel="stylesheet" href="Task1Style.css">
+  </head>
+  <body>
+    <div class="title">
+      <p>Task Manager</p>
+    </div>
+    <div class="container">
+      <div>
+    <p>Tasks</p>
+    <input type="text" id="task" placeholder="Enter the task" required>
+    </div>
+    <div>
+    <p>Description</p>
+    <input type="text" id="desc" placeholder="Enter the description" required>
+    </div>
+    <div id="time">
+    </div>
+    </div>
+    <!-- Button -->
+    <div class="btn1">
+      <button id="btn-add">Add</button>
+    </div>
+    <!-- Timer -->
+    <div id="ttt">
+      00:00:00
+    </div>
+    <div class="start-btn" style="text-align: center;">
+    <button  onclick="start()" id="stop">Start</button>
+    <button  onclick="reset()">Reset</button>
+    </div>  
+    <div>
+      <select name="btn" id="name"> 
+        <option value="none">Filter</option>
+        <option value="Meeting">Meeting</option>
+        <option value="Personal Break">Personal Break</option>
+        <option value="Project">Project</option>
+      </select>
+      <button id="btn">Submit</button>
+    </div>
+    <div>
+    <table id="body">
+      <tr>
+        <th>Task</th>
+        <th>Description</th>
+        <th>Duration</th>
+      </tr>
+      <tbody id="mytable"></tbody>
+    </table>
+    </div>
+  </body>
+  <script src="Task1.js"></script>
+</html>
